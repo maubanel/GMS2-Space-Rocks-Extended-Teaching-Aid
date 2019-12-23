@@ -15,4 +15,11 @@ switch(instance)
 	title = "End of Vector";
 	break;
 }
-draw_text(x, y - sprite_get_bbox_bottom(spr_frame) * .5 - 30, title +  "\nx: " + string(x) + " - y: " + string(y));
+if (room < lvl_vector_3)
+draw_text(x, y - sprite_get_bbox_bottom(spr_frame) * .5 - 50, title +  "\nx: " + string(x) + " - y: " + string(y));
+
+else 
+{
+	draw_set_color(c_gray);
+	draw_text(x, y + 10, "(0x, 0y)");
+}
