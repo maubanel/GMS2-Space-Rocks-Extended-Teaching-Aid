@@ -73,6 +73,18 @@ if (position_meeting(mouse_x, mouse_y, obj_next_room))
 			case lvl_game_physics_4:
 			room_goto(lvl_alarm_1);
 			break;
+			
+			case lvl_alarm_1:
+			room_goto(lvl_collision_1);
+			break;
+			
+			case lvl_collision_1:
+			room_goto(lvl_room_start_outside_1);
+			break;
+			
+			case lvl_room_start_outside_1:
+			room_goto(lvl_end_step_exit_1);
+			break;
 		}
 	}
 

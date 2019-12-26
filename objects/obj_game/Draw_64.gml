@@ -58,4 +58,17 @@ switch(room)
 	scr_lvl_alarm_1();
 	break;
 	
+	case lvl_collision_1:
+	scr_lvl_collision_1();
+	break;
+	
+	case lvl_room_start_outside_1:
+	scr_lvl_room_start_outside_1();
+	break;
+	
+	case lvl_end_step_exit_1:
+	scr_lvl_end_step_exit_1();
+	break;
+	
+	
 }

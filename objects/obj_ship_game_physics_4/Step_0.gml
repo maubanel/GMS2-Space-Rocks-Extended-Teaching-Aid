@@ -29,3 +29,4 @@ speed = speed - ship_friction;
 
 // Clamp velocity
 speed = clamp(speed, 0, max_speed);
+
