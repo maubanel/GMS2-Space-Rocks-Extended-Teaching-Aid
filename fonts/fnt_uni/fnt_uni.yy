@@ -6,7 +6,7 @@
     "AntiAlias": 1,
     "TTFName": "",
     "ascenderOffset": 3,
-    "bold": false,
+    "bold": true,
     "charset": 0,
     "first": 0,
     "fontName": "DejaVu Sans",
@@ -84162,6 +84162,6 @@
     ],
     "sampleText": "abcdef ABCDEF\\n0123456789 .,<>\"'&!?\\nthe quick brown fox jumps over the lazy dog\\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\\nDefault character: ▯ (9647)",
     "size": 18,
-    "styleName": "Condensed",
+    "styleName": "Condensed Bold Oblique",
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f"
 }

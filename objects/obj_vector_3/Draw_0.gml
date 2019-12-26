@@ -6,7 +6,7 @@ draw_self();
 draw_set_font(fnt_uni);
 
 var text = "vector a" + "\u20D7" + " = ";
-if (pressed) text += "(" + string(floor(end_x_axis)) + "x, -" + string(floor(end_y_axis)) + "y)";
+if (pressed) text += "(" + string(floor(end_x_axis)) + "x, -" + string(floor(end_y_axis)) + "y)\n This vector representation is using the cartesian coordinate system";
 
 draw_text(520, 580, text);
 

@@ -29,6 +29,50 @@ if (position_meeting(mouse_x, mouse_y, obj_next_room))
 			case lvl_vector_2:
 			room_goto(lvl_vector_3);
 			break;
+			
+			case lvl_vector_3:
+			room_goto(lvl_vector_4);
+			break;
+			
+			case lvl_vector_4:
+			room_goto(lvl_velocity_1);
+			break;
+			
+			case lvl_velocity_1:
+			room_goto(lvl_velocity_2);
+			break;
+			
+			case lvl_velocity_2:
+			room_goto(lvl_velocity_3);
+			break;
+			
+			case lvl_velocity_3:
+			room_goto(lvl_vector_addition_1);
+			break;
+			
+			case lvl_vector_addition_1:
+			room_goto(lvl_vector_addition_2);
+			break;
+			
+			case lvl_vector_addition_2:
+			room_goto(lvl_game_physics_1);
+			break;
+			
+			case lvl_game_physics_1:
+			room_goto(lvl_game_physics_2);
+			break;
+			
+			case lvl_game_physics_2:
+			room_goto(lvl_game_physics_3);
+			break;
+			
+			case lvl_game_physics_3:
+			room_goto(lvl_game_physics_4);
+			break;
+			
+			case lvl_game_physics_4:
+			room_goto(lvl_alarm_1);
+			break;
 		}
 	}
 
@@ -44,3 +88,32 @@ else
 		reset = false;
 	}
 }
+
+if (keyboard_check_pressed(ord("1")))
+{
+	if (room != lvl_vector_1) room = lvl_vector_1;	
+}
+
+else if (keyboard_check_pressed(ord("2")))
+{
+	if (room != lvl_velocity_1) room = lvl_velocity_1;	
+}
+
+else if (keyboard_check_pressed(ord("3")))
+{
+	if (room != lvl_vector_addition_1) room = lvl_vector_addition_1;	
+}
+
+else if (keyboard_check_pressed(ord("4")))
+{
+	if (room != lvl_game_physics_1) room = lvl_game_physics_1;	
+}
+
+else if (keyboard_check_pressed(ord("5")))
+{
+	if (room != lvl_alarm_1) room = lvl_alarm_1;	
+}
+
+
+
+
