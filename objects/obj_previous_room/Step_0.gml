@@ -85,6 +85,10 @@ if (position_meeting(mouse_x, mouse_y, obj_previous_room))
 			case lvl_end_step_exit_1:
 			room_goto(lvl_room_start_outside_1);
 			break;
+			
+			case lvl_draw_lives_health_1:
+			room_goto(lvl_end_step_exit_1);
+			break;
 		}
 	}
 
@@ -101,6 +105,7 @@ else
 	}
 }
 
-
+if (room == lvl_vector_1) image_alpha = 0;
+else image_alpha = 1;
 
 

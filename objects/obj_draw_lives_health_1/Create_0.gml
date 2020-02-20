@@ -5,3 +5,7 @@ end_vec_x = 0;
 end_vec_y = 0;
 tick = 0;
 bounce = false;
+
+// Health and lives global variables
+health = 100;
+lives = 5;

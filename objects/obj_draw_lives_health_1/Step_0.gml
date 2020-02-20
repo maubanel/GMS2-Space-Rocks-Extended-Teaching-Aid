@@ -1,15 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (position_meeting(mouse_x, mouse_y, obj_end_tep_exit_1))
+if (position_meeting(mouse_x, mouse_y, obj_draw_lives_health_1))
 {
-	if (mouse_check_button(mb_left))
+	if (mouse_check_button_pressed(mb_left))
 	{
 		image_xscale = -1.25;
 		image_yscale = 1.25;
 		pressed = true;
-		with (obj_ship_2) exited = true;
-		if (alarm[0] < 0) alarm[0] = 2 * room_speed;
+		if (health > 0) health -= 10;
+		if (health <= 0) if (lives > 0) { lives--; health = 100; }
+		if (alarm[0] < 0 && (lives <= 0)) alarm[0] = 2 * room_speed;
 	}
 	else if (!pressed)
 	{
@@ -25,9 +26,9 @@ if (position_meeting(mouse_x, mouse_y, obj_end_tep_exit_1))
 
 if (pressed)
 {
-	tick += delta_time / 1000000;
-	tick = clamp(tick, 0, 1);
-	image_alpha = 0;
+	//tick += delta_time / 1000000;
+	//tick = clamp(tick, 0, 1);
+	//image_alpha = 0;
 }	
 
 else

@@ -85,9 +85,12 @@ if (position_meeting(mouse_x, mouse_y, obj_next_room))
 			case lvl_room_start_outside_1:
 			room_goto(lvl_end_step_exit_1);
 			break;
+			
+			case lvl_end_step_exit_1:
+			//room_goto(lvl_draw_lives_health_1);
+			break;
 		}
 	}
-
 }
 
 else 
@@ -126,6 +129,9 @@ else if (keyboard_check_pressed(ord("5")))
 	if (room != lvl_alarm_1) room = lvl_alarm_1;	
 }
 
+
+if (room == lvl_end_step_exit_1) image_alpha = 0;
+else image_alpha = 1;
 
 
 

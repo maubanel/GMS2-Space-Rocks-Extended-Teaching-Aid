@@ -70,5 +70,10 @@ switch(room)
 	scr_lvl_end_step_exit_1();
 	break;
 	
+	case lvl_draw_lives_health_1:
+	scr_draw_health_lives_1();
+	break;
+	
+	
 	
 }
